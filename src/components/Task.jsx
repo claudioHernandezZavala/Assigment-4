@@ -1,6 +1,6 @@
 import styles from "./Task.module.css";
 import { useState } from "react";
-
+import { MdEdit, MdDelete, MdSave, MdGrid3X3, MdClose } from "react-icons/md";
 const Task = ({
   description,
   completed,
@@ -45,11 +45,11 @@ const Task = ({
             value={editedDescription}
             onChange={(e) => setEditedDescription(e.target.value)}
           />
-          <button className="button" onClick={handleSave}>
-            Save
+          <button className="button button-edit" onClick={handleSave}>
+            <MdSave size={20} />
           </button>
-          <button className="button" onClick={handleCancel}>
-            Cancel
+          <button className="button button-delete" onClick={handleCancel}>
+            <MdClose size={20} />
           </button>
         </>
       ) : (
@@ -61,11 +61,17 @@ const Task = ({
           >
             {description}
           </span>
-          <button className="button" onClick={() => setIsEditing(true)}>
-            Edit
+          <button
+            className="button button-edit"
+            onClick={() => setIsEditing(true)}
+          >
+            <MdEdit size={20} />
           </button>
-          <button className="button" onClick={() => deleteTask(index)}>
-            Delete
+          <button
+            className="button button-delete"
+            onClick={() => deleteTask(index)}
+          >
+            <MdDelete size={20} />
           </button>
         </>
       )}

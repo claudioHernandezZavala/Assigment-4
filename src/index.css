@@ -1,7 +1,7 @@
 .task-wrapper {
   padding: 20px;
   width: max-content;
-  margin-top: -600px;
+  margin-top: -500px;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.85);
   width: min(700px, 100%);
@@ -24,8 +24,32 @@ body,
   color: #334155;
 }
 .button {
-  background-color: #8b5cf6;
+  border-radius: 5px;
+}
+.button-delete {
+  background-color: #e60404;
   color: #ffffff;
+}
+.button-edit {
+  background-color: #0493e6;
+  color: #ffffff;
+}
+.button-green {
+  background-color: #04e622;
+  color: #000000;
+  margin: 5px;
+  font-size: large;
+  font-weight: bolder;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+.form-input {
+  border-radius: 5px;
+  margin: 10px;
+  text-decoration: none;
+  border-width: 1px;
+  padding: 5px;
 }
 .textcenter {
   justify-content: center;

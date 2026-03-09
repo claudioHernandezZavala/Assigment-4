@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Md1kPlus, MdAdd } from "react-icons/md";
 const TaskForm = ({ addTask }) => {
   const [description, setDescription] = useState("");
 
@@ -17,13 +18,16 @@ const TaskForm = ({ addTask }) => {
       <label>
         New Task:
         <input
+          className="form-input"
           name="description"
           placeholder="Enter task description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
       </label>
-      <button type="submit">Add task</button>
+      <button className="button button-green" type="submit">
+        <MdAdd size={20} />
+      </button>
     </form>
   );
 };
