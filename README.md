@@ -1,4 +1,4 @@
 # Instructions
-cd /repo
-npm install
-npm run dev
+- [ ] cd /repo
+- [ ] npm install
+- [ ] npm run dev
