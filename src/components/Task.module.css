@@ -1,0 +1,9 @@
+.task-container {
+  background-color: #f1f5f9;
+  padding: 10px;
+  margin: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  width: max-content;
+  color: black;
+}

@@ -1,0 +1,37 @@
+.task-wrapper {
+  padding: 20px;
+  width: max-content;
+  margin-top: -600px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  width: min(700px, 100%);
+}
+.to-center {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  color: #334155;
+}
+.button {
+  background-color: #8b5cf6;
+  color: #ffffff;
+}
+.textcenter {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body {
+  background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+}
